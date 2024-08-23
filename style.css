@@ -1,0 +1,73 @@
+body {
+    background-color: #FAF8EF;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    height: 420px;
+    width: 420px;
+    background-color: #BBADA0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    padding: 10px;
+}
+
+.grid div {
+    width: 100%;
+    height: 100%;
+    background-color: #CDC1B4;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 52px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.grid div[data-value='2'] { background-color: #EEE4DA; color: #776E65; }
+.grid div[data-value='4'] { background-color: #EDE0C8; color: #776E65; }
+.grid div[data-value='8'] { background-color: #F2B179; color: #F9F6F2; }
+.grid div[data-value='16'] { background-color: #F59563; color: #F9F6F2; }
+.grid div[data-value='32'] { background-color: #F67C5F; color: #F9F6F2; }
+.grid div[data-value='64'] { background-color: #F65E3B; color: #F9F6F2; }
+.grid div[data-value='128'] { background-color: #EDCF72; color: #F9F6F2; }
+.grid div[data-value='256'] { background-color: #EDCC61; color: #F9F6F2; }
+.grid div[data-value='512'] { background-color: #EDC850; color: #F9F6F2; }
+.grid div[data-value='1024'] { background-color: #EDC53F; color: #F9F6F2; }
+.grid div[data-value='2048'] { background-color: #EDC22E; color: #F9F6F2; }
+
+.scoreContainer {
+    margin-top: 60px;
+    padding: 10px;
+    background-color: #BBADA0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 30px;
+    color: #F9F6F2;
+}
+
+.header {
+    font-size: 60px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #776E65;
+}
+
+.instructions {
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    color: #776E65;
+}
+
+#result {
+    text-align: center;
+    margin: auto;
+    font-size: 24px;
+    color: #776E
